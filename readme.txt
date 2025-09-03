@@ -1,18 +1,100 @@
-The columns in the data are as follows:
+🌬️ Wind Power Generation Forecasting
+📌 Project Overview
 
-Time - Hour of the day when readings occurred
-temperature_2m - Temperature in degrees Fahrenheit at 2 meters above the surface
-relativehumidity_2m - Relative humidity (as a percentage) at 2 meters above the surface
-dewpoint_2m - Dew point in degrees Fahrenheit at 2 meters above the surface
-windspeed_10m - Wind speed in meters per second at 10 meters above the surface
-windspeed_100m - Wind speed in meters per second at 100 meters above the surface
-winddirection_10m - Wind direction in degrees (0-360) at 10 meters above the surface (see notes)
-winddirection_100m - Wind direction in degrees (0-360) at 100 meters above the surface (see notes)
-windgusts_10m - Wind gusts in meters per second at 100 meters above the surface
-Power - Turbine output, normalized to be between 0 and 1 (i.e., a percentage of maximum potential output)
+This project focuses on predicting wind power generation for the next 15 days using weather, turbine, and rotor features collected from a windmill. With data recorded every 10 minutes between January 2018 and March 2020, the aim is to build a reliable long-term wind forecasting model to support renewable energy utilization.
 
-Notes:
-	1) Likely many of these variables will not be very relevant. They are included here but do not need to be included in the final models.
-	2) Degrees are measured from 0 to 360. Since 0 and 360 represent the same spot on a circle, consider transforming these using sine and/or cosine. Also consider converting them to radians, instead of degrees.
-	3) Each location can have a different model. There is no reason to build one model to work for all locations.
+📂 Dataset Details
 
+Source: Windmill sensor data
+
+Duration: Jan 2018 – Mar 2020
+
+Interval: Every 10 minutes
+
+Features: Weather, turbine, and rotor characteristics
+
+Target: Wind power output
+
+Reference Papers:
+
+Wind Power Prediction Using Advanced Models
+
+Neural Networks for Wind Power Forecasting
+
+✨ Objectives
+
+Develop a time-series forecasting model for wind power generation.
+
+Compare different approaches (Statistical Models, Machine Learning, Deep Learning).
+
+Evaluate performance using forecasting metrics (MAE, RMSE, MAPE).
+
+Provide insights for sustainable energy planning.
+
+🛠️ Tech Stack
+
+Programming: Python
+
+Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, TensorFlow/PyTorch
+
+Approaches Tried:
+
+ARIMA / SARIMA
+
+Random Forest / Gradient Boosting
+
+LSTM / GRU Neural Networks
+
+🚀 Workflow
+
+Data Preprocessing
+
+Handled missing values, anomalies, and outliers
+
+Feature engineering (weather + turbine signals)
+
+Exploratory Data Analysis (EDA)
+
+Visualized power output patterns
+
+Correlation between weather conditions and power generation
+
+Modeling
+
+Built baseline statistical and ML models
+
+Implemented deep learning models for long-term forecasting
+
+Evaluation
+
+Compared models using forecasting accuracy metrics
+
+Prediction
+
+Generated 15-day ahead wind power predictions
+
+📈 Results & Insights
+
+Deep Learning models (LSTM/GRU) performed best in capturing long-term dependencies.
+
+Weather variables (wind speed, temperature) showed the highest correlation with power output.
+
+Reliable forecasting can help in grid stability and renewable energy optimization.
+
+🌍 Impact
+
+Renewable energy remains one of the most important topics for a sustainable future. With the rise of wind farms, wind power forecasting plays a critical role in:
+
+Efficient energy distribution
+
+Reducing reliance on fossil fuels
+
+Sustainable planning for smart grids
+
+👨‍💻 Author
+
+Nakul Dhulipudi
+
+📧 Email: nakulsatya53503@gmail.com
+
+🔗 GitHub: nakull6264
